@@ -1,8 +1,10 @@
+import './globals.css';
+
 export default function Home() {
   return (
-    <div>
+    <div className="columns-2">
       <h1>
-        Jarrett Cura
+        jarrett cura
       </h1>
       <p>
         computer science @ university of illinois urbana champaign<br />
@@ -41,6 +43,7 @@ export default function Home() {
       <p>
         how this site was made
       </p>
+      <img src="/images/self.webp" />
     </div>
   );
 }
