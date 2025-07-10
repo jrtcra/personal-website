@@ -1,4 +1,5 @@
 import './globals.css';
+import { Articles } from '@/components/articles';
 
 export default function Home() {
   return (
@@ -28,21 +29,19 @@ export default function Home() {
         <a href="https://www.letterboxd.com/jrtcra" target="_blank">film</a><br />
       </p>
       <h2>
-        connect
+        contact
       </h2>
       <p>
-        <a href="https://www.linkedin.com/in/jarrettcura" target="_blank">linkedin</a><br />
         <a href="https://www.github.com/jrtcra" target="_blank">github</a><br />
-        <a href="/documents/jarrett-cura-resume.pdf" target="_blank">resume</a><br />
         <a href="https://www.discord.com/users/418236586044555264">discord</a><br />
-        <a href="mailto:jarrettcura@gmail.com">email</a>
+        <a href="mailto:jarrettcura@gmail.com">email</a><br />
+        <a href="/documents/jarrett-cura-resume.pdf" target="_blank">resume</a><br />
+        <a href="https://www.linkedin.com/in/jarrettcura" target="_blank">linkedin</a><br />
       </p>
       <h2>
-        documentation
+        writing
       </h2>
-      <p>
-        how this site was made
-      </p>
+      <Articles />
       <img src="/images/self.webp" />
     </div>
   );
