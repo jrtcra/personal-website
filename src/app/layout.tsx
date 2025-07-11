@@ -5,6 +5,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Jarrett Cura",
   description: "Jarrett Cura's Website",
+  icons: {
+    icon: '/images/jc-icon.png',
+  },
 };
 
 export default function RootLayout({

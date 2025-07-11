@@ -6,7 +6,10 @@ export function Articles() {
         <div>
             {
                 // TODO: add link to each article
-                fs.readdirSync(path.join(process.cwd(), 'src','app', 'articles')).filter((file) => path.extname(file) === '.mdx')
+                fs.readdirSync(
+                    path.join(process.cwd(), 'src', 'app', 'articles')).filter((file) =>
+                        path.extname(file) === '.md'
+                    )
             }
         </div>
     )
