@@ -1,5 +1,5 @@
 import './globals.css';
-import { Articles } from '@/components/articles';
+import { Articles } from '@/app/articles';
 
 export default function Home() {
   return (
