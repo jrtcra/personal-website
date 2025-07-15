@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
+import { Navigation } from "./navigation";
 
 export const metadata: Metadata = {
   title: "Jarrett Cura",
@@ -18,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
+        <Navigation />
         {children}
       </body>
     </html>

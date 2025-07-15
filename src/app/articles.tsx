@@ -18,6 +18,7 @@ export function Articles() {
                     <Link
                         key={article.slug}
                         href={`/${article.slug}`}
+                        target="_blank"
                     >
                         <div>
                             <p>
