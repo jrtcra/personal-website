@@ -15,17 +15,20 @@ export function Articles() {
                     return 1
                 })
                 .map((article) => (
-                    <Link
-                        key={article.slug}
-                        href={`/${article.slug}`}
-                        target="_blank"
-                    >
-                        <div>
+                    <div className='w-full flex flex-row md:space-x-2' key={article.slug}>
+                        <Link
+                            href={`/writing/${article.slug}`}
+                            target="_blank"
+                        >
                             <p>
-                                {article.metadata.title} - {article.metadata.created}
+                                {article.metadata.title}
                             </p>
-                        </div>
-                    </Link>
+                        </Link>
+                        <p style={{ color: 'gray' }}>
+                            {article.metadata.created}
+                        </p>
+                    </div>
+
                 ))}
         </div>
     )

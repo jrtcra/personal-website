@@ -8,9 +8,9 @@ export const metadata = {
 export default function Writing() {
     return (
         <div>
-            <h2>
+            <h1>
                 writing
-            </h2>
+            </h1>
             <div>
                 <Articles />
             </div>

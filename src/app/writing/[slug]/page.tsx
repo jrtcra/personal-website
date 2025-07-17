@@ -1,4 +1,4 @@
-import { getArticles } from "../article-utils"
+import { getArticles } from "../../article-utils"
 
 export async function generateStaticParams() {
     let articles = getArticles()
