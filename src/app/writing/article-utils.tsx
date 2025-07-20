@@ -50,7 +50,7 @@ function readMdFile(filePath: string){
 }
 
 export function getArticles() {
-    let dir = path.join(process.cwd(), 'src', 'app', 'articles')
+    let dir = path.join(process.cwd(), 'src', 'app', 'writing', 'articles')
     let mdFiles = fs.readdirSync(dir).filter((file) => path.extname(file) === '.mdx')
     
     return mdFiles.map((file) => {

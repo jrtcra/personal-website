@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Navigation } from "./navigation";
+import { Navigation } from "./components/navigation";
 
 export const metadata: Metadata = {
   title: "Jarrett Cura",

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { getArticles } from './article-utils';
+import { getArticles } from './writing/article-utils';
 
 export function Articles() {
     let articles = getArticles()
@@ -7,19 +7,14 @@ export function Articles() {
         <div>
             {articles
                 .sort((articleOne, articleTwo) => {
-                    if (
-                        new Date(articleOne.metadata.created) > new Date(articleTwo.metadata.created)
-                    ) {
+                    if (new Date(articleOne.metadata.created) > new Date(articleTwo.metadata.created)) {
                         return -1
                     }
                     return 1
                 })
                 .map((article) => (
                     <div className='w-full flex flex-row md:space-x-2' key={article.slug}>
-                        <Link
-                            href={`/writing/${article.slug}`}
-                            target="_blank"
-                        >
+                        <Link href={`/writing/${article.slug}`}>
                             <p>
                                 {article.metadata.title}
                             </p>
