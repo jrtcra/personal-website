@@ -4,6 +4,7 @@ import path from 'path';
 type Metadata = {
     title: string
     created: string
+    summary: string
 }
 
 function readMdFile(filePath: string){

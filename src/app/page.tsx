@@ -27,6 +27,7 @@ export default function Home() {
         longboard dancing<br />
         <a href="https://www.goodreads.com/jrtcra" target="_blank">books</a><br />
         <a href="https://www.letterboxd.com/jrtcra" target="_blank">film</a><br />
+        <a href="https://open.spotify.com/user/zxga1grbnjrvycy6hcgivhxpp?si=77380f05834c4262" target="_blank">music</a><br />
       </p>
       <h2>
         contact
